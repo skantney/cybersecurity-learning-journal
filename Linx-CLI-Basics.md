@@ -4,6 +4,7 @@
 I successfully completed the **Linux CLI Basics** room on TryHackMe, which focuses on navigating the Linux file system and interacting with the OS via the terminal.
 
 ## 🛠 Skills Acquired
+
 * **Navigation:** Mastering `pwd`, `ls` (including hidden files with `-la`), and `cd`.
 * **File Interaction:** Using `cat` to read file contents and `find` to locate specific data within directories.
 * **System Awareness:** Understanding the Linux directory structure and how to retrieve system information.
