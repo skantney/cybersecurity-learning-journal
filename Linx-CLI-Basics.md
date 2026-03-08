@@ -1,22 +1,26 @@
-# TryHackMe: Linux CLI Basics - Completion Notes
+# Linux CLI Basics
 
-## 🚩 Project Overview
-I successfully completed the **Linux CLI Basics** room on TryHackMe, which focuses on navigating the Linux file system and interacting with the OS via the terminal.
+## What is the Linux CLI?
+The Command Line Interface (CLI) is a text-based interface used to interact with the computer's operating system. It allows for high-speed file management and system configuration without a GUI.
 
-## 🛠 Skills Acquired
+## Why it matters for cybersecurity
+Most servers and security tools run on Linux. Mastering the CLI is essential for navigating compromised systems, analyzing logs, and automating security tasks.
 
-* **Navigation:** Mastering `pwd`, `ls` (including hidden files with `-la`), and `cd`.
-* **File Interaction:** Using `cat` to read file contents and `find` to locate specific data within directories.
-* **System Awareness:** Understanding the Linux directory structure and how to retrieve system information.
+## Essential Commands
+**pwd**
+Prints the "Working Directory," showing exactly where you are in the file system.
 
-## 📝 Key Commands Learned
-| Command | Purpose |
-| :--- | :--- |
-| `pwd` | Print Working Directory (Where am I?) |
-| `ls -al` | List all files, including hidden ones, with detailed info. |
-| `cd ..` | Move up one directory level. |
-| `find ~ -name [file]` | Search for a specific file starting from the home directory. |
-| `cat [file]` | Display the contents of a file. |
+**ls -la**
+Lists all files in a directory. The `-la` flags ensure you see hidden files (starting with a dot) and detailed file permissions.
 
----
+**cd**
+Used to change directories. Using `cd ..` moves you up one level in the folder hierarchy.
 
+## File Investigation Example
+Command used:
+cat mission_brief.txt
+
+Result:
+THM{MISSION-FOUND}
+
+This shows how to use the `cat` command to read the contents of a file directly in the terminal. In a real-world scenario, this is how an analyst might quickly inspect a suspicious script or configuration file.
