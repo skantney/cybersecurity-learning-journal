@@ -7,18 +7,36 @@ The Command Line Interface (CLI) is a text-based interface used to interact with
 Most servers and security tools run on Linux. Mastering the CLI is essential for navigating compromised systems, analyzing logs, and automating security tasks.
 
 ## Commands
-### Check Current Directory
 
+### Check Current Directory
 ```bash
 pwd
 ```
+Prints the working directory, showing exactly where you are in the file system.
 
-Shows the current working directory so you know where you are in the filesystem.
+### List Files
+```bash
+ls -la
+```
+Lists all files in a directory. The `-la` flags display hidden files and detailed permissions.
 
-**ls -la** Lists all files in a directory. The `-la` flags ensure you see hidden files and detailed file permissions.
+### Change Directory
+```bash
+cd directory_name
+```
+Moves you into another directory. Using `cd ..` moves up one level.
 
-**cd** Used to change directories. Using `cd ..` moves you up one level in the folder hierarchy.
+### Read a File
+```bash
+cat mission_brief.txt
+```
+Displays the contents of a file directly in the terminal.
 
+### Search File Content
+```bash
+grep "keyword" filename
+```
+Searches a file for specific text. Security analysts often use `grep` to find suspicious activity in logs.
 ## Linux Investigation Example
 
 Objective: Read the contents of a file discovered during a system investigation.
