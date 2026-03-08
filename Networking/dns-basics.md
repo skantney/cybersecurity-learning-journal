@@ -2,42 +2,64 @@
 
 ## What is DNS?
 
-DNS (Domain Name System) translates domain names into IP addresses.
+DNS stands for Domain Name System.
 
-Example: 
- 
-```bash 
+It translates human-readable domain names into IP addresses that computers use to locate servers on the internet.
 
-google.com -> 142.250.190.78
-```
+Example:
 
-## Why it matters for cybersecurity
+google.com → 142.250.190.78
 
-Attackers sometimes use DNS traffic to hide communication with infected systems.
+Without DNS, we would have to memorize IP addresses for every website.
 
-## Commands
+---
 
-## DNS Investigation Example
+## How DNS Works (Simplified)
 
-Command used:
+When you type a website into your browser:
 
-```bash
+1. Your computer asks a DNS resolver for the IP address.
+2. The resolver checks if it already knows the answer.
+3. If not, it queries DNS servers on the internet.
+4. The correct IP address is returned.
+5. Your computer connects to that server.
+
+The website loads.
+
+---
+
+## Why DNS Matters for Cybersecurity
+
+DNS traffic is often trusted by networks, which makes it attractive for attackers.
+
+Malware can use DNS to:
+
+- communicate with command-and-control servers
+- hide data exfiltration
+- redirect users to malicious websites
+
+Security teams monitor DNS logs to detect suspicious activity.
+
+---
+
+## Useful Commands
+
+### nslookup
+Queries DNS records.
+
+Example:
 
 nslookup google.com
 
-Result:
-Name: google.com
-Address: 142.250.190.78
+### dig
+Advanced DNS lookup tool used on Linux.
 
-This shows how DNS resolves a domain name to an IP address. In security investigations, analysts use this to identify infrastructure behind suspicious domains.
-## Investigating the System
+Example:
 
-Once you can navigate the file system, the next step is gathering information about the environment you are working in.
+dig google.com
 
-**whoami** Displays the username of the current user. This is vital when first accessing a machine to see what level of privileges you have.
+---
 
-**uname -a** Prints detailed system information, including the Linux kernel version and the system architecture.
+## Key Takeaway
 
-**df -h** Shows the amount of disk space available on the file system in a "human-readable" format (GB/MB).
-
-**cat /etc/os-release** A specific command to view the distribution details (e.g., Ubuntu, Debian, or CentOS).
+DNS is like the phonebook of the internet. Understanding how it works helps security analysts detect suspicious network behavior.
