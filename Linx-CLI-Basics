@@ -1,0 +1,20 @@
+# TryHackMe: Linux CLI Basics - Completion Notes
+
+## 🚩 Project Overview
+I successfully completed the **Linux CLI Basics** room on TryHackMe, which focuses on navigating the Linux file system and interacting with the OS via the terminal.
+
+## 🛠 Skills Acquired
+* **Navigation:** Mastering `pwd`, `ls` (including hidden files with `-la`), and `cd`.
+* **File Interaction:** Using `cat` to read file contents and `find` to locate specific data within directories.
+* **System Awareness:** Understanding the Linux directory structure and how to retrieve system information.
+
+## 📝 Key Commands Learned
+| Command | Purpose |
+| :--- | :--- |
+| `pwd` | Print Working Directory (Where am I?) |
+| `ls -al` | List all files, including hidden ones, with detailed info. |
+| `cd ..` | Move up one directory level. |
+| `find ~ -name [file]` | Search for a specific file starting from the home directory. |
+| `cat [file]` | Display the contents of a file. |
+
+---
