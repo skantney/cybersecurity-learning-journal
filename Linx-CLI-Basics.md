@@ -19,4 +19,4 @@ I successfully completed the **Linux CLI Basics** room on TryHackMe, which focus
 | `cat [file]` | Display the contents of a file. |
 
 ---
-*Completed as part of the [Pre Security Path](https://tryhackme.com/path/outline/presecurity) on TryHackMe.*
+
